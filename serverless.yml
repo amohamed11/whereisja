@@ -1,0 +1,18 @@
+org: projects
+app: whereisja
+service: whereisja
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  whereisja:
+    handler: whereisja.get
+    events:
+      - http:
+          path: /src/
+          method: get
+
+plugins:
+  - serverless-plugin-typescript
