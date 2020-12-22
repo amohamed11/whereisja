@@ -1,4 +1,5 @@
 import { Handler } from 'aws-lambda';
+import fetch from 'cross-fetch';
 
 export const  get: Handler = async (event: any) => {
   const jaWisdoms = JSON.parse(

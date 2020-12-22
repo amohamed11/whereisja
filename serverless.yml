@@ -8,10 +8,10 @@ provider:
 
 functions:
   whereisja:
-    handler: whereisja.get
+    handler: src/whereisja.get
     events:
       - http:
-          path: /src/
+          path: /
           method: get
 
 plugins:
